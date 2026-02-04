@@ -24,7 +24,8 @@ const Hero = () => {
         
         {/* TITLE */}
         <div className="text-white font-bold leading-tight text-7xl max-xl:text-6xl max-lg:text-5xl max-md:text-4xl max-sm:text-3xl">
-          <h1>LET's</h1>
+          <h1>LET&apos;S</h1>
+
           <h1>GET</h1>
           <h1>MOVING</h1>
         </div>
