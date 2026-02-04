@@ -2,12 +2,12 @@
 
 import Image from "next/image";
 
-const WorkoutSessions = () => {
+const WorkoutSection = () => {
   return (
     <section className="relative py-24 px-6">
-      
       {/* GLASS CONTAINER */}
-      <div className="
+      <div
+        className="
         max-w-7xl
         mx-auto
         grid
@@ -19,13 +19,13 @@ const WorkoutSessions = () => {
         rounded-3xl
         p-10
         shadow-[0_0_60px_rgba(99,102,241,0.15)]
-      ">
-
+      "
+      >
         {/* LEFT SIDE */}
         <div className="flex flex-col gap-6">
-          
           {/* HEADING */}
-          <h1 className="
+          <h1
+            className="
             text-4xl
             font-extrabold
             tracking-widest
@@ -35,21 +35,22 @@ const WorkoutSessions = () => {
             from-indigo-400
             to-purple-500
             drop-shadow-[0_0_25px_rgba(99,102,241,0.7)]
-          ">
+          "
+          >
             TOP WORKOUT SESSION
           </h1>
 
           {/* TEXT */}
           <p className="text-gray-300 text-lg leading-relaxed">
-            Push beyond your limits with our elite workout programs designed to 
-            transform strength, endurance, and confidence. Whether you&apos;re just 
-            starting your fitness journey or striving for peak performance, our 
-            expert trainers and high-energy environment will help you achieve 
-            results faster than ever.
+            Push beyond your limits with our elite workout programs designed to
+            transform strength, endurance, and confidence. Whether you&apos;re
+            just starting your fitness journey or striving for peak performance,
+            our expert trainers and high-energy environment will help you
+            achieve results faster than ever.
           </p>
 
           {/* IMAGE */}
-          <div className="relative h-105 w-full rounded-2xl overflow-hidden">
+          <div className="relative h-130 w-full rounded-2xl overflow-hidden ">
             <Image
               src="/img5.jpg"
               alt="Workout Training"
@@ -59,7 +60,7 @@ const WorkoutSessions = () => {
             />
 
             {/* CINEMATIC OVERLAY */}
-            <div className="absolute inset-0 bg-linear-to-t from-black/70 to-transparent"/>
+            <div className="absolute inset-0 bg-linear-to-t from-black/70 to-transparent" />
           </div>
 
           {/* STATS */}
@@ -79,13 +80,12 @@ const WorkoutSessions = () => {
               <p className="text-gray-400">Workout Programs</p>
             </div>
           </div>
-
         </div>
 
         {/* RIGHT SIDE */}
         <div className="flex flex-col gap-6">
-
-          <h1 className="
+          <h1
+            className="
             text-4xl
             font-extrabold
             tracking-widest
@@ -94,39 +94,38 @@ const WorkoutSessions = () => {
             bg-linear-to-r
             from-indigo-400
             to-purple-500
-          ">
+          "
+          >
             FEATURED BOOTCAMPS
           </h1>
 
           <p className="text-gray-300 text-lg leading-relaxed">
-            Experience next-level training with our specialized bootcamps built 
-            to challenge your body and ignite your motivation. Every session is 
-            crafted to deliver measurable progress while keeping you energized 
+            Experience next-level training with our specialized bootcamps built
+            to challenge your body and ignite your motivation. Every session is
+            crafted to deliver measurable progress while keeping you energized
             and inspired.
           </p>
 
           {/* BOOTCAMPS */}
           <div className="flex flex-col gap-6">
-
             {[
               {
                 title: "Strength & Conditioning",
-                desc: "Build lean muscle, improve power, and enhance total-body performance."
+                desc: "Build lean muscle, improve power, and enhance total-body performance.",
               },
               {
                 title: "HIIT Fat Burn",
-                desc: "Maximize calorie burn and accelerate fat loss with intense intervals."
+                desc: "Maximize calorie burn and accelerate fat loss with intense intervals.",
               },
               {
                 title: "Functional Fitness",
-                desc: "Boost mobility, stability, and real-world strength for everyday movement."
+                desc: "Boost mobility, stability, and real-world strength for everyday movement.",
               },
               {
                 title: "Cardio Endurance",
-                desc: "Increase stamina and heart health with high-energy cardio sessions."
+                desc: "Increase stamina and heart health with high-energy cardio sessions.",
               },
             ].map((camp, index) => (
-              
               <div
                 key={index}
                 className="
@@ -146,18 +145,14 @@ const WorkoutSessions = () => {
                   {camp.title}
                 </h4>
 
-                <p className="text-gray-400 mt-2">
-                  {camp.desc}
-                </p>
+                <p className="text-gray-400 mt-2">{camp.desc}</p>
               </div>
             ))}
-
           </div>
         </div>
-
       </div>
     </section>
   );
 };
 
-export default WorkoutSessions;
+export default WorkoutSection;

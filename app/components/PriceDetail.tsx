@@ -5,19 +5,19 @@ import { Check } from "lucide-react";
 const PriceDetails = () => {
   const pricing = [
     {
-      imgUrl: "/pricing.jpg",
+      imgUrl: "/img11.jpg",
       title: "QUARTERLY",
       price: 18000,
       length: 3,
     },
     {
-      imgUrl: "/pricing.jpg",
+      imgUrl: "/img10.jpg",
       title: "HALF_YEARLY",
       price: 34000,
       length: 6,
     },
     {
-      imgUrl: "/pricing.jpg",
+      imgUrl: "/img13.jpg",
       title: "YEARLY",
       price: 67000,
       length: 12,
@@ -25,24 +25,25 @@ const PriceDetails = () => {
   ];
 
   return (
-    <section className="py-24 px-6 bg-gray-50">
+    <section className="py-24 px-6 bg-gray-50 bg-[radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]">
       {/* TITLE */}
-    <h1 className="
+      <h1
+        className="
 text-5xl
 font-extrabold
 text-center
 mb-16
-bg-gradient-to-r
+bg-linear-to-r
 from-blue-400
 via-cyan-300
 to-blue-600
 text-transparent
 bg-clip-text
 drop-shadow-[0_0_25px_rgba(59,130,246,0.7)]
-">
-  KRISHNA ELITE FITNESS
-</h1>
-
+"
+      >
+        KRISHNA ELITE FITNESS
+      </h1>
 
       {/* GRID */}
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-10">
@@ -94,7 +95,7 @@ drop-shadow-[0_0_25px_rgba(59,130,246,0.7)]
                 href="/"
                 className="block text-center bg-blue-500 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition"
               >
-                Join Now
+                Explore More
               </Link>
             </div>
           </div>
